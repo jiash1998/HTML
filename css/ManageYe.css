@@ -1,0 +1,352 @@
+* {
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	font-family: "微软雅黑";
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.col12 {
+	background: rgba(105, 105, 105, 0.8);
+	height: 50px;
+	width: 100%;
+	float: left;
+}
+
+.col12 p {
+	color: white;
+	font-size: 20px;
+	padding-left: 100px;
+	padding-top: 6px;
+	float: left;
+}
+
+.span1 {
+	height: 50px;
+	width: 50px;
+}
+
+.span1 img {
+	height: 40px;
+	width: 40px;
+	margin-left: 23px;
+	margin-top: 4px;
+	float: left;
+}
+
+.span1 img:hover {
+	background: #17A2B8;
+}
+
+.span2 {
+	padding-left: 70px;
+	padding-top: 6px;
+	float: left;
+	color: white;
+	font-size: 20px;
+}
+
+.span2_1 {
+	padding-left: 12px;
+	font-size: 10px;
+}
+
+.body_all {
+	width: 100%;
+	height: 600px;
+	background: blue;
+	float: left;
+}
+
+.left {
+	float: left;
+	height: 600px;
+	width: 13%;
+}
+
+.myNavbar_out {
+	float: left;
+	background-color: #17A2B8;
+	width: 180px;
+	height: 600px;
+}
+
+.myNavbar_inul {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	width: 100%;
+}
+
+.myNavbar_inul li {
+	width: 100%;
+	color: white;
+	line-height: 40px;
+	text-align: center;
+}
+
+.myActive {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+ul>li:hover {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+ol>li:hover {
+	background-color: rgba(0, 0, 0, .1);
+}
+
+.myNavbar_inul li.myActive:before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 40px;
+	background: #4F4F4F;
+	left: 0;
+}
+
+.icon_left {
+	position: absolute;
+	margin-left: -30px;
+	margin-top: 1px;
+}
+
+.icon_right {
+	position: absolute;
+	margin-left: 22px;
+	margin-top: 1px;
+}
+
+.li_add {
+	margin-top: 10px;
+}
+
+.myNavbar_inul li.ol_open ol {
+	display: none;
+	width: 92%;
+	background-color: #fff;
+}
+
+.myNavbar_inul li.ol_open ol li {
+	height: 40px;
+	line-height: 30px;
+	color: #a5a8ad;
+	margin-left: 0;
+}
+
+.right1 {
+	float: right;
+	/*background: pink;*/
+	background: whitesmoke;
+	height: 600px;
+	width: 87%;
+	display: none;
+}
+
+.right_head1 {
+	height: 10%;
+	width: 100%;
+	margin-top: 5px;
+	/*border: 2px solid blueviolet;*/
+}
+
+.right_body1 {
+	height: 76%;
+	width: 80%;
+	margin-left: 10%;
+	overflow: auto;
+	/*border: 2px solid blueviolet;*/
+}
+
+.right_head1 h2 {
+	margin-left: 10%;
+}
+
+.right_head1 span {
+	margin-left: 1%;
+	font-size: 10px;
+}
+
+.right_head1 p {
+	/*color: #17A2B8;*/
+	/*text-indent: 2em;*/
+	margin-left: 10%;
+}
+
+.right_body1 a {
+	width: 30%;
+}
+
+#collapse1,
+#collapse2,
+#collapse3,
+#collapse4,
+#collapse5 p {
+	text-indent: 2em;
+}
+
+.right2 {
+	float: right;
+	/*background: pink;*/
+	background: whitesmoke;
+	height: 600px;
+	width: 87%;
+	overflow: auto;
+	/*display: none;*/
+}
+
+.right2_head {
+	/*border: 2px solid palevioletred;*/
+	width: 90%;
+	height: 15%;
+	margin-left: 5%;
+}
+
+.right2_head h2 {
+	margin-top: 5px;
+	margin-left: 5%;
+}
+
+.right2_head p {
+	margin-left: 5%;
+}
+
+.right2_head span {
+	margin-left: 1%;
+	font-size: 10px;
+}
+
+.right2_body1 {
+	height: 76%;
+	width: 90%;
+	margin-left: 5%;
+	overflow: auto;
+	/*border: 2px solid blueviolet;*/
+	/*background: rgba(23,162,184,0.9);*/
+}
+
+.right2_body1 h4 {
+	margin-left: 5%;
+}
+
+.right2_body2 {
+	height: 95%;
+	width: 90%;
+	margin-left: 5%;
+	overflow: auto;
+	/*border: 2px solid blueviolet;*/
+}
+
+.right2_body2 h4 {
+	margin-left: 5%;
+}
+
+.form-group {
+	margin-top: 10px;
+}
+
+#dragName,
+#dragID,
+#dragInd,
+#dragPrice,
+#dragNum {
+	width: 80%;
+	margin-left: 10%;
+}
+
+#dragIDLab,
+#dragNameLab,
+#dragIndLab,
+#dragPriLab,
+#dragNumLab {
+	margin-left: 10%;
+}
+
+#dragIDLab:after {
+	content: "*";
+	color: red;
+}
+
+#dragIDBtn {
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 10px;
+}
+
+#dragSubBtn {
+	width: 80%;
+	margin-left: 10%;
+}
+
+.right2_body3 {
+	height: 85%;
+	width: 90%;
+	margin-left: 5%;
+	overflow: auto;
+	border: 2px solid blueviolet;
+}
+
+.right2_body3 h4 {
+	margin-left: 5%;
+}
+
+.right2_body4 {
+	height: 85%;
+	width: 90%;
+	margin-left: 5%;
+	overflow: auto;
+	border: 2px solid blueviolet;
+}
+
+.right2_body4 h4 {
+	margin-left: 5%;
+}
+
+.right3 {
+	float: right;
+	/*background: pink;*/
+	background: whitesmoke;
+	height: 600px;
+	width: 87%;
+	overflow: auto;
+	display: none;
+}
+
+.right3_head {
+	border: 2px solid palevioletred;
+	width: 90%;
+	height: 15%;
+	margin-left: 5%;
+}
+
+.right3_head h2 {
+	margin-left: 5%;
+}
+
+.right3_head span {
+	margin-left: 1%;
+	font-size: 10px;
+}
+
+.right3_head p {
+	margin-left: 5%;
+}
+
+.right3_body {
+	border: 2px solid #BEE5EB;
+	width: 80%;
+	height: 455px;
+	margin-left: 10%;
+}
+
+.foot1 {
+	width: 100%;
+	float: left;
+	background: gray;
+	height: 120px;
+}

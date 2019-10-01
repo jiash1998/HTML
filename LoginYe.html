@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>医疗药品管理系统</title>
+		<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				cursor: pointer;
+			}
+			
+			html,
+			body {
+				height: 100%;
+			}
+			
+			body {
+				display: flex;
+				flex-direction: column;
+				font-family: "微软雅黑";
+				/*font-weight: bold;*/
+				background: url(img/BK6.jpg);
+				background-size: 1280px 789px;
+			}
+			
+			.headr {
+				background: pink;
+				height: 40px;
+				width: 100%;
+				font-size: 22px;
+				text-align: center;
+			}
+			
+			.col12_1 {
+				/*background: rgba(248,248,255,0.7);*/
+				background: rgba(105, 105, 105, 0.6);
+				color: whitesmoke;
+				/*color: #17A2B8;*/
+				height: 50px;
+				padding-left: 100px;
+				padding-top: 6px;
+				font-size: 20px;
+			}
+			
+			.col12_1 span {
+				font-size: 10px;
+				padding-left: 12px;
+			}
+			
+			.form1 {
+				width: 420px;
+				height: 230px;
+				margin-left: 415px;
+				border-radius: 10px;
+				margin-top: 80px;
+				background: grey;
+				font-size: 15px;
+				/*background: rgba(248,248,255,0.7);*/
+				/*background: rgba(245, 245, 245, 0.9);*/
+				background: rgba(105, 105, 105, 0.6);
+				/*background: rgba(0,0,0, 0.6);*/
+			}
+			
+			.form1 label {
+				margin-left: 95px;
+				color: white;
+			}
+			
+			.form1 button,
+			.input_button {
+				margin-left: 108px;
+				margin-top: 20px;
+				font-size: 15px;
+			}
+			
+			.lab-user {
+				margin-top: 40px;
+			}
+			
+			.form1 #user,
+			#password {
+				border-radius: 5px;
+				border: none;
+			}
+			
+			.col12_span {
+				color: white;
+				font-size: 12px;
+				margin-left: 35%;
+			}
+			
+			.col12_p1 {
+				color: white;
+				font-size: 10px;
+				margin-left: 20%;
+			}
+			
+			.col12_p2 {
+				color: white;
+				font-size: 10px;
+				margin-left: 34%;
+				margin-top: 21px;
+			}
+			
+			.foot1 {
+				background: gray;
+				height: 90px;
+				margin-top: 200px;
+			}
+			
+			.col4 {
+				margin-top: 100px;
+				margin-left: 33%;
+				border-radius: 10px;
+				height: 200px;
+				background: rgba(105, 105, 105, 0.5);
+			}
+			
+			.img1,
+			.img2 {
+				float: left;
+			}
+			
+			.btnDL {
+				margin-left: 44%;
+				margin-top: 57%;
+				width: 100px;
+				height: 80px;
+			}
+			
+			.btnDL img {
+				height: 55px;
+				width: 60px;
+			}
+			
+			.btnZC {
+				margin-left: 102%;
+				margin-top: 57%;
+				width: 100px;
+				height: 80px;
+			}
+			
+			.btnZC img {
+				height: 55px;
+				width: 60px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col12_1">
+					医疗药品管理系统<span>Medical Drug Management System</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col4">
+					<div class="img1">
+						<a href="#myModal" class="btn btn-info btn-lg btnDL" data-toggle="modal" title="点击登录">
+							<img src="img/DL.png" />
+						</a>
+						<div id="myModal" class="modal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<form>
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">×</button>
+										</div>
+										<div class="modal-body">
+											<label for="userName" style="margin-left: 25%;">用户</label>
+											<input type="text" style="width: 50%;margin-left: 25%;" class="form-control" />
+											<label for="userPass" style="margin-left: 25%;">密码</label>
+											<input type="password" style="width: 50%; margin-left: 25%;" class="form-control" />
+										</div>
+										<div class="modal-footer">
+											<button class="btn btn-info" data-dismiss="modal">关闭</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="img2">
+						<a href="userReg.html" class="btn btn-info btn-lg btnZC" title="点击注册">
+							<img src="img/ZC3.png" />
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer navbar-fixed-bottom foot1">
+			<div class="container">
+				<span class="col12_span">药犹兵也。兵能卫人之死，不能养人之生。无病而服药，犹不乱而设兵也。</span>
+				<p class="col12_p1">Medicine is also a soldier. A soldier can save a man's death, but not his life. Taking medicine without a disease is like setting soldiers in disorder.</p>
+				<p class="col12_p2">版权所有 @医疗药品管理系统 Copyright@2019 All rigth 免责申明|技术支持 @JST/LMK</p>
+			</div>
+		</footer>
+	</body>
+
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>管理员注册</title>
+		<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				cursor: pointer;
+			}
+			
+			html,
+			body {
+				height: 100%;
+			}
+			
+			body {
+				font-family: "微软雅黑";
+				background: whitesmoke;
+				
+			}
+			
+			.col12_1 {
+				/*background: rgba(0, 0, 0, 0.6);*/
+				/*background: rgba(105, 105, 105, 0.6);*/
+				background: gray;
+				color: whitesmoke;
+				height: 50px;
+				padding-left: 80px;
+				padding-top: 6px;
+				font-size: 20px;
+			}
+			
+			.col12_1 span {
+				font-size: 10px;
+				padding-left: 12px;
+			}
+			
+			.span1 {
+				height: 50px;
+				width: 50px;
+				float: left;
+			}
+			
+			.span1 img {
+				height: 40px;
+				width: 40px;
+				margin-left: -70px;
+				margin-top: -2px;
+			}
+			
+			.span1 img:hover {
+				background: #17A2B8;
+			}
+			
+			.body {
+				background: #F5F6F7;
+			}
+			
+			.col8 {
+				height: 600px;
+				width: 500px;
+				float: left;
+				color: white;
+				background: rgba(105, 105, 105, 0.7);
+			}
+			
+			.col8 {
+				margin-top: 50px;
+			}
+			
+			.BZ {
+				height: 80px;
+			}
+			
+			.BZ_P {
+				font-size: 30px;
+				letter-spacing: 10px;
+				padding-top: 10px;
+				margin-left: 42%;
+				color: #17A2B8;
+			}
+			
+			.regName {
+				margin-top: 15px;
+			}
+			
+			.regName,
+			.regPass,
+			.regPassAg,
+			.regEmail,
+			.regPhone {
+				margin-left: 25%;
+				font-size: 15px;
+			}
+			
+			.regName:after,
+			.regPass:after,
+			.regPassAg:after,
+			.regEmail:after,
+			.regPhone:after {
+				content: '*';
+				color: red;
+			}
+			
+			#TName,
+			#TPass1,
+			#TPass2,
+			#TPhone,
+			#TEmail {
+				margin-left: 25%;
+				width: 50%;
+			}
+			
+			.span_remind {
+				font-size: 12px;
+				/*color: #8B1A1A;*/
+				/*color: #CD3333;*/
+				color: #EE3B3B;
+				margin-left: 25%;
+			}
+			
+			#btnYZM {
+				width: 20%;
+				margin-top: 10px;
+			}
+			
+			.textYZM {
+				width: 20%;
+				margin-left: 25%;
+				margin-top: 10px;
+				/*margin-right: 125px;*/
+				margin-right: 10%;
+				float: left;
+			}
+			
+			.btnZC {
+				margin-top: 5px;
+				margin-left: 25%;
+				/*width: 630px;*/
+				width: 50.2%;
+			}
+			
+			.col12_span {
+				color: white;
+				font-size: 12px;
+				margin-left: 35%;
+			}
+			
+			.col12_p1 {
+				color: white;
+				font-size: 10px;
+				margin-left: 20%;
+			}
+			
+			.col12_p2 {
+				color: white;
+				font-size: 10px;
+				margin-left: 34%;
+				margin-top: 20px;
+			}
+			
+			.foot1 {
+				background: gray;
+				height: 90px;
+				margin-top: 60px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col12_1">
+					<span class="span1"><a href="LoginYe.html"><img src="img/return3.png"></a></span> 医疗药品管理系统
+					<span>Medical Drug Management System</span></div>
+			</div>
+		</div>
+
+		<div class="BZ">
+			<p class="BZ_P">管理员注册</p>
+		</div>
+
+		<div class="body">
+
+			<form>
+				<div class="form-group">
+					<label class="regName control-label">用户名</label>
+					<input type="text" class="form-control" id="TName" required="required"/>
+				</div>
+				<div class="form-group">
+					<label class="regPass">密码</label>
+					<input type="password" class="form-control" id="TPass1" required="required"/>
+				</div>
+				<div class="form-group">
+					<label class="regPassAg">确认密码</label>
+					<input type="password" class="form-control" id="TPass2" required="required"/>
+				</div>
+				<div class="form-group">
+					<label class="regEmail">邮箱</label>
+					<input type="email" class="form-control" id="TEmail" required="required"/>
+				</div>
+				<div class="form-group">
+					<label class="regPhone">手机号</label>
+					<input type="text" class="form-control" id="TPhone" required="required" />
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control textYZM" id="YZM" placeholder="输入验证码" />
+				</div>
+				<div class="form-group">
+					<button type="button" class="btn btn-info" id="btnYZM">验证码</button>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-info btnZC" id="regSub">注册</button>
+				</div>
+			</form>
+		</div>
+
+		<footer class="footer foot1">
+			<div class="container">
+				<span class="col12_span">药犹兵也。兵能卫人之死，不能养人之生。无病而服药，犹不乱而设兵也。</span>
+				<p class="col12_p1">Medicine is also a soldier. A soldier can save a man's death, but not his life. Taking medicine without a disease is like setting soldiers in disorder.</p>
+				<p class="col12_p2">版权所有 @医疗药品管理系统 Copyright@2019 All rigth 免责申明|技术支持 @JST/LMK</p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			var $col2_li1 = $(".col2_li1");
+			var $col2_li2 = $(".col2_li2");
+			var $TName = $("#TName");
+			var $TPass1 = $("#TPass1");
+			var $TPass2 = $("#TPass2");
+			var $TEmail = $("#TEmail");
+			var $TPhone = $("#TPhone");
+			var $TYzm = $(".textYZM");
+			var $regSub = $(".btnZC");
+			var check = true;
+
+			$("form :input").keyup(function() {
+				var $parent = $(this).parent();
+				$parent.find(".span_remind").remove();
+
+				if($(this).is("#TName")) {
+					var name = $TName.val();
+					if(name.length < 3) {
+						$parent.append("<span class='span_remind'>请填写正确用户名!</span>");
+						return check = false;
+					}
+					return check;
+				}
+
+				if($(this).is("#TPass1")) {
+					var pass1 = $TPass1.val();
+					var comPass1 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/;
+					if(!(comPass1.test(pass1))) {
+						$parent.append("<span class='span_remind'>密码由数字和字母组成，长度应在8-12位</span>");
+					}
+
+				}
+
+				if($(this).is("#TPass2")) {
+					var pass1 = $TPass1.val();
+					var pass2 = $TPass2.val();
+					if(pass1 != pass2) {
+						$parent.append("<span class='span_remind'>请保持两次输入的密码一致！</span>");
+					}
+				}
+
+				if($(this).is("#TEmail")) {
+					var email = $.trim($TEmail.val());
+					var isEmail = /^\w{6,}@[a-z0-9]{2,3}\.[a-z]+$|\,$/;
+					if(!(isEmail.test(email))) {
+						$parent.append("<span class='span_remind'>请输入正确的邮箱格式！</span>");
+					}
+				}
+
+				if($(this).is("#TPhone")) {
+					var phone = $.trim($TPhone.val());
+					var isPhone = /^1[0-9]{10}$/;
+					if(!(isPhone.test(phone))) {
+						$parent.append("<span class='span_remind'>请输入正确的手机格式！</span>");
+					}
+				}
+
+			}).click(function() {
+				if($(this).is(".btnZC")) {
+					$("form text:input").trigger("keyup");
+					var numError = $("form .span_remind").length;
+					if(numError) {
+						alert("请按照要求填写！");
+					} else if(($TName.length && $TPass1.length && $TPass2.length && $TEmail.length && $TPhone.length && $TYzm.length) == 1) {
+//						alert("请完整填写！");
+					} else {
+						alert("注册成功！");
+					}
+				}
+			})
+
+		});
+	</script>
+
+</html>

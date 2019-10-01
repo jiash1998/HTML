@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>药品管理页面</title>
+		<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/ManageYe.css" />
+		<link rel="stylesheet" type="text/css" href="DHIconfont/iconfont.css" />
+		<link rel="stylesheet" href="dist/botui.min.css" />
+		<link rel="stylesheet" href="dist/botui-theme-default.css" />
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.table2excel.min.js"></script>
+		<script type="text/javascript" src="js/vue.min.js"></script>
+		<script type="text/javascript" src="dist/botui.min.js"></script>
+		<script type="text/javascript" src="js/ManageYe.js"></script>
+	</head>
+
+	<body>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg12 col12">
+					<span class="span1"><a href="LoginYe.html"><img src="img/return3.png"></a></span>
+					<span class="span2">医疗药品管理系统<span class="span2_1">Medical Drug Management System</span></span>
+					<!--<span class="span3"><img src="img/men.png"></span>-->
+				</div>
+			</div>
+		</div>
+
+		<div class="body_all">
+
+			<div class="left">
+				<div class="myNavbar_out">
+					<ul class="myNavbar_inul">
+						<li class="li_first li_add myActive">
+							<i class="iconfont icon_left">&#xe6a9;</i><span>药品介绍</span>
+						</li>
+						<li class="li_second ol_open"><i class="iconfont icon_left">&#xe6c2;</i><span>仓库管理</span><i class="iconfont icon_right">&#xe6c7;</i>
+							<ol>
+								<li>药品统计</li>
+								<li>信息修改</li>
+								<li>药品删除</li>
+								<li>药品增加</li>
+							</ol>
+						</li>
+						<li class="li_third"><i class="iconfont icon_left">&#xe6e6;</i><span>药品咨询</span></li>
+						<li class="li_fourth"><i class="iconfont icon_left">&#xe6b0;</i><span>用户管理</span></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="right1">
+				<div class="right_head1">
+					<h2>常用西药<span>DailyWesternMedicine</span></h2>
+					<p>相对于祖国传统中药而言，指现代医学用的药物，一般用化学合成方法制成或从天然产物提制而成；包括阿司匹林、青霉素、止痛片等。
+					</p>
+				</div>
+				<hr style="border:none;border-top: 1px ridge #17A2B8;width: 95%;margin-left: 2.5%;" />
+				<div class="right_body1">
+					<div class="container">
+						<a href="#collapse1" class="btn btn-info" data-toggle="collapse">布洛芬（Ibuprofen）</a>
+						<div id="collapse1" class="in">
+							<div class="alert alert-info">
+								<img src="img/BLF.jpg" style="height: 80px;width: 100px;float: left;" />
+								<p>此药为解热镇痛类，非甾体抗炎药。本品通过抑制环氧化酶，减少前列腺素的合成，产生镇痛、抗炎作用；通过下丘脑体温调节中枢而起解热作用。
+								</p>
+								<p>对阿司匹林或其他非甾体类消炎药过敏者对本品可有交叉过敏反应，禁用。活动性或有既往消化性溃疡史，胃肠道出血或穿孔的患者禁用。孕妇及哺乳期妇女禁用。
+								</p>
+							</div>
+						</div>
+						<!--<br />-->
+						<a href="#collapse2" class="btn btn-info" data-toggle="collapse">阿莫西林(amoxicillin)</a>
+						<div id="collapse2" class="in">
+							<div class="alert alert-info">
+								<img src="img/AMXL.jpg" style="height: 80px;width: 100px;float: left;" />
+								<p>此药是一种最常用的半合成青霉素类抗生素，半衰期约为61.3分钟。在酸性条件下稳定，胃肠道吸收率达90%。阿莫西林杀菌作用强，穿透细胞膜的能力也强。是目前应用较为广泛的口服半合成青霉素之一。
+								</p>
+								<p>
+									使用阿莫西林前必须进行青霉素皮肤试验，阳性反应者禁用。
+								</p>
+							</div>
+						</div>
+						<!--<br />-->
+						<a href="#collapse3" class="btn btn-info" data-toggle="collapse">头孢(cephalosporins)</a>
+						<div id="collapse3" class="collapse">
+							<div class="alert alert-info">
+								<img src="img/TB.jpg" style="height: 80px;width: 100px;float: left;" />
+								<p>此药可破坏细菌的细胞壁，并在繁殖期杀菌。对细菌的选择作用强，而对人几乎没有毒性，具有抗菌谱广、抗菌作用强、耐青霉素酶、过敏反应较青霉素类少见等优点。所以是一类高效、低毒、临床广泛应用的重要抗生素。
+								</p>
+								<p>
+									临床来说并无激烈的不良反应，但是服用头孢类药品切记不要饮酒, 不要相信所谓"头孢配酒，天下我有"。
+								</p>
+							</div>
+						</div>
+						<!--<br />-->
+						<a href="#collapse4" class="btn btn-info" data-toggle="collapse">阿奇霉素(azithromycin)</a>
+						<div id="collapse4" class="collapse">
+							<div class="alert alert-info">
+								<img src="img/AQMS.jpg" style="height: 80px;width: 100px;float: left;" />
+								<p>此药为半合成的十五元大环内酯类抗生素。适用于敏感细菌所引起的下列感染：支气管炎、肺炎等下呼吸道感染；皮肤和软组织感染；急性中耳炎；鼻窦炎、咽炎、扁桃体炎等上呼吸道感染
+								</p>
+								<p>
+									对阿奇霉素、红霉素或其他任何大环内酯类药物过敏者禁用。
+								</p>
+							</div>
+						</div>
+						<!--<br />-->
+						<a href="#collapse5" class="btn btn-info" data-toggle="collapse">地塞米松片(Dexamethasone)</a>
+						<div id="collapse5" class="collapse">
+							<div class="alert alert-info">
+								<img src="img/DSMSP.jpg" style="height: 90px;width: 100px;float: left;" />
+								<p>此药适应症为肾上腺皮质激素类药。主要适用于过敏性与自身免疫性炎症性疾病，如结缔组织病，严重的支气管哮喘，皮炎等过敏性疾病，溃疡性结肠炎，急性白血病，恶性淋巴瘤等。
+								</p>
+								<p>
+									对本品及肾上腺皮质激素类药物有过敏史患者禁用。 高血压、血栓症、胃与十二指肠溃疡、精神病、电解质代谢异常、心肌梗死、内脏手术、青光眼等患者一般不宜使用。
+								</p>
+							</div>
+						</div>
+						<!--<br />-->
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="right2">
+				<div class="right2_head">
+					<h2>药仓管理<span>DrugWarehouse</span></h2>
+					<p>居其位，安其职，尽其诚而不逾其度。管理员应妥善管理药仓。</p>
+				</div>
+				<hr style="border:none;border-top: 2px solid #17A2B8;width: 95%;margin-left: 2.5%;" />
+				<div class="right2_neck">
+				</div>
+				<div class="right2_body1">
+					<h4>药品统计</h4>
+					<table id="tableExc" class="table table-striped table-bordered table-hover">
+						<tr class="table-info">
+							<th>编号</th>
+							<th>药名</th>
+							<th>适用症</th>
+							<th>价格</th>
+							<th>库存</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr>
+
+					</table>
+					<button type="button" id="reDown" class="btn btn-info" style="height: 36px;width: 58px;margin-left: 78%;">
+						<img src="img/DaoChu.png" style="width: 26px;height: 26px;margin-top: -6px;"/>
+					</button>
+					<button type="button" id="reflesh" class="btn btn-info" style="height: 36px;width: 58px;margin-left: 90%;margin-top: -63px;">
+						<img src="img/SX.png" style="width: 30px;height: 30px;margin-top: -6px;"/>
+					</button>
+				</div>
+				<hr style="border-top: 2px solid #17A2B8; width: 95%;margin-left: 2.5%;" />
+				<div class="right2_body2">
+					<h4>信息修改</h4>
+					<form>
+						<div class="form-group">
+							<label id="dragIDLab">编号</label>
+							<input type="text" class="form-control" id="dragID" />
+							<button type="button" class="btn btn-info btn-sm" id="dragIDBtn">查询</button>
+						</div>
+						<div class="form-group">
+							<label id="dragNameLab">药名</label>
+							<input type="text" class="form-control" id="dragName" />
+						</div>
+						<div class="form-group">
+							<label id="dragIndLab">适用症</label>
+							<input type="text" class="form-control" id="dragInd" />
+						</div>
+						<div class="form-group">
+							<label id="dragPriLab">价格</label>
+							<input type="text" class="form-control" id="dragPrice" />
+						</div>
+						<div class="form-group">
+							<label id="dragNumLab">库存</label>
+							<input type="text" class="form-control" id="dragNum" />
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-info btn-sm" id="dragSubBtn">提交</button>
+						</div>
+					</form>
+				</div>
+				<hr style="border-top: 2px solid #17A2B8; width: 95%;margin-left: 2.5%;" />
+				<div class="right2_body3">
+					<h4>药品删除</h4>
+				</div>
+				<hr style="border-top: 2px solid #17A2B8; width: 95%;margin-left: 2.5%;" />
+				<div class="right2_body4">
+					<h4>药品增加</h4>
+				</div>
+			</div>
+			<!--<hr />-->
+			<div class="right3">
+				<div class="right3_head">
+					<h2>药品咨询<span>DrugConsultation</span></h2>
+					<p>如对药品有不懂之处，请尽情咨询。</p>
+				</div>
+				<hr style="border-top: 2px solid #17A2B8; width: 95%;margin-left: 2.5%;" />
+				<div class="right3_body">
+					<div class="">
+						<div class="botui-container" id="home-demo">
+							<bot-ui></bot-ui>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right4"></div>
+			<div class="foot1">
+
+			</div>
+	</body>
+
+</html>

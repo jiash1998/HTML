@@ -1,0 +1,44 @@
+{
+  "id": "1438823",
+  "name": "导航栏图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4933156",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "7549836",
+      "name": "对话",
+      "font_class": "RectangleCopy",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "7551131",
+      "name": "用户管理",
+      "font_class": "RectangleCopy1",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "7552200",
+      "name": "库存",
+      "font_class": "RectangleCopy4",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "7553668",
+      "name": "素材中心",
+      "font_class": "RectangleCopy6",
+      "unicode": "e6e6",
+      "unicode_decimal": 59110
+    }
+  ]
+}
